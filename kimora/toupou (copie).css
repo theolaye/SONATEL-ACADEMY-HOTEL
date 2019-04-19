@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    border: 1px solid black;
+    width: 800px;
+    height: 655px;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: absolute;
+    background-color: white;
+}
+.header{
+  border: 1px solid black;
+    height: 70px;
+    margin: auto;
+    background-color: indianred;
+}
+
+img{
+    width: 200px;
+    height:68px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+ul{
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0;
+}
+li{
+    margin-bottom:15px;/* à adapter*/ 
+    display:inline-block;
+}
+
+.section1{
+border: 1px solid black;
+width:500px;
+height:460px;
+position:absolute;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 70px;
+background-color: salmon;
+}
+
+
+
+.section2{
+border: 1px solid black;
+width: 280px;
+height: 265px;
+position:absolute;
+margin-left: 510px;
+margin-right: 0px;
+margin-top: 70px;
+background-color: firebrick;
+}
+
+
+
+.section2_1{
+border: 1px solid black;
+width: 280px;
+height:190px;
+position: absolute;
+margin-left: 1px;
+margin-right: 0px;
+margin-top: 250px;
+background-color:crimson;
+}
+
+.footer{
+border: 1px solid black;
+width: 798px;
+height:50px;
+position: absolute;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 532px;
+background-color: maroon;
+}
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+    /* on centre le menu dans la page */
+    text-align: center;
+}
+#menu-deroulant li {
+    /* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+    /* on enlève ce comportement pour les liens du sous menu*/
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+    color:#000;
+}
+#menu-deroulant ul {
+    position: absolute;
+    /* on cache les sous menus complètement sur la gauche */
+    left:-999em;
+    text-align:  left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+    /* Au survol des li du menu on replace les sous menus */
+    left:auto;
+}

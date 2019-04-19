@@ -1,0 +1,236 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    border: 1px solid black;
+    width: 800px;
+    height: 729px;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: absolute;
+    background-color: white;
+}
+.header{
+  border: 1px solid black;
+    height: 70px;
+    margin: auto;
+    background-color: indianred;
+}
+
+img{
+    width: 200px;
+    height:68px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+ul{
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0;
+}
+li{
+    margin-bottom:15px;/* à adapter*/ 
+    display:inline-block;
+}
+
+.section1{
+border: 1px solid black;
+width:500px;
+height:460px;
+position:absolute;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 70px;
+background-color: salmon;
+}
+
+
+
+.section2{
+border: 1px solid black;
+width: 280px;
+height: 235px;
+position:absolute;
+margin-left: 510px;
+margin-right: 0px;
+margin-top: 70px;
+background-color: firebrick;
+}
+
+
+
+.section2_1{
+border: 1px solid black;
+width: 280px;
+height:190px;
+position: absolute;
+margin-left: 1px;
+margin-right: 0px;
+margin-top: 250px;
+background-color:crimson;
+}
+
+.footer{
+border: 1px solid black;
+width: 798px;
+height:50px;
+position: absolute;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 532px;
+background-color: maroon;
+}
+
+
+
+
+
+
+
+body{
+    font-family: Verdana, Tahoma, sans-serif ;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+
+nav > ul{
+    margin:0px;
+    padding:0px;
+}
+
+nav li{
+    list-style-type: none;
+}
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.submenu{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+
+nav input[type=checkbox]{
+    display:none;
+}
+
+nav label{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a{
+    padding:20px 30px ;
+    color: #FFF;
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .submenu{
+    display:inline-block;
+    position: absolute;
+    top:100%;
+    left:0px;
+    padding: 0px;
+    z-index:1000;
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+.submenu li{
+    border-bottom: 1px solid #CCC;
+}
+.menu-html:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+.menu-css:hover{
+    border-top: 5px solid #0070bb;
+    background-color: RGBa(000, 112, 192, 0.15);
+}
+.menu-js:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(241, 211, 79, 0.15);
+}
+.menu-contact:hover{
+    border-top: 5px solid #BBB;
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+.menu-html .submenu{
+    background-color: RGB(230, 100, 40);
+}
+.menu-css.submenu{
+    background-color: RGB(000, 160 ,240);
+}
+.menu-js .submenu{
+    background-color: RGB(250, 215, 100);
+}
+.submenu li:hover a{
+    color:#EEE;
+    font-weight: bold;
+}
+.menu-html .submenu li:hover{
+    background-color: RGB(210, 77, 60);
+}
+.menu-css .submenu li:hover{
+    background-color: RGB(000, 115, 200);
+}
+.menu-js .submenu li:hover{
+    background-color: RGB(200, 165, 75);
+}
+
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+@media screen and (max-width:780px){
+    .menu-mobile{
+        display: block;
+        color:#FFF;
+        background-color: RGBa(29, 197, 151, 0.97);
+        text-align: center;
+        padding: 12px 0;
+}
+  nav ul{
+    display: none;
+  }
+  nav ul li, nav ul li a{
+      width: 100%;
+      text-align: center;
+  }
+  nav ul li a, nav ul li:hover a{
+      padding: 10px 0px 10px 0px;
+  }
+  nav li:hover .submenu{
+      display: block;
+      position : static;
+  }
+
